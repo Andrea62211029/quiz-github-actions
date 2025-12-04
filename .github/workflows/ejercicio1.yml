@@ -1,0 +1,21 @@
+name: Ejercicio 1
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: SALUDO
+        run: |
+          echo "Hola, mi nombre es Andrea Solangel Dubon Navarrete"
+
+      - name: Fecha y hora actual
+        run: date
+
+      - name: SISTEMA OPERATIVO
+        run: |
+          echo "Sistema operativo: $RUNNER_OS"
